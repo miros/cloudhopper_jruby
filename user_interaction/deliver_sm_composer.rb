@@ -37,6 +37,7 @@ module UserInteraction
       deliver.setSourceAddress(source)
       deliver.setDestAddress(dest)
       deliver.setShortMessage(textBytes)
+      deliver.setServiceType("USSD") if @ussd
       deliver
     end
 
